@@ -15,11 +15,7 @@ html {
 
 @media only screen and (max-width: 470px){
 
-  #site-container {
-    max-width: 375px;
-  }
-
-  .content {
+  html {
     max-width: 380px;
     margin: auto;
   }
@@ -190,12 +186,65 @@ iframe.tiny,
     iframe.large,
     iframe.small,
     iframe.medium,
-    iframe.tiny
-    .redirect {
+    iframe.tiny {
       display: none;
     }
 
+    .site-title h2 {
+    font-size: 1rem;
     }
+
+
+    .nav a:hover {
+      text-decoration: none;
+      font-size: 1rem;
+      border: none;
+      color: darkgrey;
+
+    }
+
+
+  }
+
+  @media only screen and (max-width: 469px) {
+
+    iframe.large,
+    iframe.small,
+    iframe.medium,
+    iframe.tiny {
+      display: none;
+    }
+
+
+    .site-title h2 {
+
+    font-size: 0.9rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-family: 'Julius Sans One', sans-serif;
+      color: darkgrey;
+      border: none;
+      margin-left: 0.5rem;
+      padding: 0.3rem;
+
+    }
+
+    .nav a:hover {
+      text-decoration: none;
+      font-size: 0.8rem;
+      border: none;
+      color: darkgrey;
+
+    }
+
+    }
+
+
+
+
 
 
 .info-container {
@@ -222,6 +271,10 @@ iframe.tiny,
   margin: 1rem auto;
 }
 
+.info-container img {
+  max-width: 200px;
+}
+
 @media only screen and (max-width: 550px) and (min-width: 471px){
 
   h1 {
@@ -229,10 +282,8 @@ iframe.tiny,
   }
 
 
-  .info-container {
-    height: 1300px!important;
-    display: flex;
-    flex-direction: column;
+  h3 {
+    font-size: 0.9rem;
   }
 
   }
@@ -242,6 +293,17 @@ iframe.tiny,
 
   h1 {
     font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+
+  .info-container {
+    max-height: 2000px!important;
+    max-width: 370px!important;
+    display: flex;
+    flex-direction: column;
   }
 
   }
@@ -285,3 +347,15 @@ iframe.tiny,
   font-size: 0.7rem;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 470px) {
+
+  .footer p {
+    padding: 1rem 0.1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  }
