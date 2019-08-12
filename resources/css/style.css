@@ -13,6 +13,20 @@ html {
   margin: auto;
 }
 
+@media only screen and (max-width: 470px){
+
+  #site-container {
+    max-width: 375px;
+  }
+
+  .content {
+    max-width: 380px;
+    margin: auto;
+  }
+
+}
+
+
 
 h1 {
   font-size: 2.5rem;
@@ -95,7 +109,7 @@ ul {
   min-width: 25rem;
   border: 0.1px solid white;
   top: 6rem;
-
+  display: flex;
 }
 
 /*@media only screen and (min-width: 1745px) {
@@ -119,15 +133,19 @@ ul {
 
 iframe {
   border: none;
-  margin-bottom: 2rem;
+  margin: auto;
+  padding-bottom: 2rem;
+  display: block;
 }
+
 
 @media only screen and (min-width: 1479px) {
 
 
 iframe.medium,
 iframe.small,
-iframe.tiny {
+iframe.tiny,
+.redirect {
   display: none;
 }
 
@@ -138,36 +156,51 @@ iframe.tiny {
 
   iframe.large,
   iframe.small,
-  iframe.tiny {
+  iframe.tiny,
+  .redirect {
     display: none;
   }
 
   }
 
-@media only screen and (max-width: 1243px) and min-width {
+@media only screen and (max-width: 1243px) and (min-width: 900px) {
 
   iframe.large,
   iframe.medium,
-  iframe.tiny {
+  iframe.tiny,
+  .redirect {
     display: none;
   }
 
 }
 
-@media only screen and (max-width: 751px) {
+@media only screen and (max-width: 899px) and (min-width: 635px) {
 
   iframe.large,
   iframe.small,
-  iframe.medium {
+  iframe.medium,
+  .redirect {
     display: none;
   }
 
   }
 
+  @media only screen and (max-width: 634px) and (min-width: 470px){
+
+    iframe.large,
+    iframe.small,
+    iframe.medium,
+    iframe.tiny
+    .redirect {
+      display: none;
+    }
+
+    }
+
 
 .info-container {
-  min-width: 25rem;
-  margin: 5rem;
+  /*min-width: 25rem;*/
+  margin: 5rem auto;
   max-height: 50rem;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -188,6 +221,30 @@ iframe.tiny {
   line-height: 1.5rem;
   margin: 1rem auto;
 }
+
+@media only screen and (max-width: 550px) and (min-width: 471px){
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .info-container {
+    height: 1300px!important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  }
+
+
+@media only screen and (max-width: 470px) {
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  }
 
 .button button {
   padding: 1.5rem;
