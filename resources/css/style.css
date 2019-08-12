@@ -3,15 +3,15 @@ html {
   font-size: 18px;
 }
 
-div {
+/*div {
   border: 1px solid black;
+}*/
+
+
+.content {
+  max-width: 1750px;
+  margin: auto;
 }
-
-
-.site-container {
-  margin: 0 1.5rem;
-}
-
 
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
 
 nav.nav {
   display: inline-block;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 ul {
@@ -57,7 +57,7 @@ ul {
   line-height: 4rem;
 }
 
-a {
+.nav a {
   text-decoration: none;
   font-size: 1rem;
   font-family: 'Julius Sans One', sans-serif;
@@ -68,17 +68,17 @@ a {
 
 }
 
-a:hover {
+.nav a:hover {
   text-decoration: none;
   font-size: 1rem;
   border: 1px solid darkgrey;
   border-radius: 15px;
   color: darkgrey;
-  transition: 0.3s;
+  transition: 0.5s;
 
 }
 
-a:active {
+.nav a:active {
   text-decoration: none;
   font-size: 1rem;
   background-color: rgb(106, 170, 210);
@@ -90,23 +90,141 @@ a:active {
 
 
 .banner {
-  background-image: url("../images/design-watermark.png");
+  background-image: url("../images/hero-design-image.png");
   background-size: cover;
-  min-width: 470px;
+  min-width: 25rem;
   border: 0.1px solid white;
   top: 6rem;
 
 }
 
+/*@media only screen and (min-width: 1745px) {
+  .image-container img {
+    width: 200%;
+    height: auto;
+    object-fit: cover;
+  }*/
+
 .tagline {
-  width: 40%;
+  max-width: 40%;
   margin: 20% auto;
   height: 30%;
-  background-color: darkgray;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   color: white;
   padding: 2rem;
   border-radius: 15px;
-  background: rgba(106, 170, 210, 0.82);
+  background-color: rgba(106, 170, 210, 0.82);
+}
+
+iframe {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1479px) {
+
+
+iframe.medium,
+iframe.small,
+iframe.tiny {
+  display: none;
+}
+
+}
+
+
+@media only screen and (max-width: 1478px) and (min-width: 1244px) {
+
+  iframe.large,
+  iframe.small,
+  iframe.tiny {
+    display: none;
+  }
+
+  }
+
+@media only screen and (max-width: 1243px) and min-width {
+
+  iframe.large,
+  iframe.medium,
+  iframe.tiny {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 751px) {
+
+  iframe.large,
+  iframe.small,
+  iframe.medium {
+    display: none;
+  }
+
+  }
+
+
+.info-container {
+  min-width: 25rem;
+  margin: 5rem;
+  max-height: 50rem;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.info-container h1 {
+  color: black;
+}
+
+.info-container p {
+  font-family: 'Lato', sans-serif;
+  max-width: 50%;
+  text-align: left;
+  line-height: 1.5rem;
+  margin: 1rem auto;
+}
+
+.button button {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: rgba(106, 170, 210, 0.82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1px solid rgba(106, 170, 210, 0.82);
+  border-style: none;
+}
+
+.button button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(106, 170, 210, 0.82);
+  border: 1px solid rgba(106, 170, 210, 0.82);
+  transition: 0.5s;
+}
+
+.button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.button a:hover {
+  color: rgba(106, 170, 210, 0.82);
+}
+/*footer*/
+
+.footer {
+  background-color: rgba(106, 170, 210, 0.82);
+}
+
+.footer p {
+  padding: 1rem 0.1rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
 }
