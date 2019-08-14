@@ -9,17 +9,8 @@ html {
 
 
 .content {
-  max-width: 1750px;
+  max-width: 1600px;
   margin: auto;
-}
-
-@media only screen and (max-width: 470px){
-
-  html {
-    max-width: 380px;
-    margin: auto;
-  }
-
 }
 
 
@@ -58,7 +49,7 @@ ul {
 
 .site-title {
   display: inline-block;
-  width: 350px;
+  width: 650px;
   font-family: 'Julius Sans One', sans-serif;
   color: darkgray;
 }
@@ -108,16 +99,10 @@ ul {
   display: flex;
 }
 
-/*@media only screen and (min-width: 1745px) {
-  .image-container img {
-    width: 200%;
-    height: auto;
-    object-fit: cover;
-  }*/
 
 .tagline {
-  max-width: 40%;
-  margin: 20% auto;
+  max-width: 75rem;
+  margin: 22rem auto;
   height: 30%;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -127,154 +112,73 @@ ul {
   background-color: rgba(106, 170, 210, 0.82);
 }
 
-iframe {
-  border: none;
+
+
+
+.jumbotron img {
+  max-height: 30rem;
+  object-fit: contain;
   margin: auto;
-  padding-bottom: 2rem;
-  display: block;
-}
-
-
-@media only screen and (min-width: 1479px) {
-
-
-iframe.medium,
-iframe.small,
-iframe.tiny,
-.redirect {
-  display: none;
-}
+  padding: 0;
 
 }
 
-
-@media only screen and (max-width: 1478px) and (min-width: 1244px) {
-
-  iframe.large,
-  iframe.small,
-  iframe.tiny,
-  .redirect {
-    display: none;
-  }
-
-  }
-
-@media only screen and (max-width: 1243px) and (min-width: 900px) {
-
-  iframe.large,
-  iframe.medium,
-  iframe.tiny,
-  .redirect {
-    display: none;
-  }
-
+.jumbotron.slick-slide {
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
 
-@media only screen and (max-width: 899px) and (min-width: 635px) {
+.jumbotron {
+  background-color: rgba(106, 170, 210, 0);
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
-  iframe.large,
-  iframe.small,
-  iframe.medium,
-  .redirect {
-    display: none;
-  }
-
-  .site-title h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  }
-
-  .site-title h1 {
-    font-size: 1.5rem;
-  }
-
-  }
-
-  @media only screen and (max-width: 634px) and (min-width: 470px){
-
-    iframe.large,
-    iframe.small,
-    iframe.medium,
-    iframe.tiny {
-      display: none;
-    }
-
-    .site-title h2 {
-    font-size: 1rem;
-    }
-
-    .site-title h1 {
-      font-size: 1.5rem;
-    }
-
-    .nav a:hover {
-      text-decoration: none;
-      font-size: 1rem;
-      border: none;
-      color: darkgrey;
-
-    }
-
-
-  }
-
-  @media only screen and (max-width: 469px) {
-
-    iframe.large,
-    iframe.small,
-    iframe.medium,
-    iframe.tiny {
-      display: none;
-    }
-
-
-    .site-title h2 {
-    font-size: 0.9rem;
-    }
-
-    .nav a {
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-family: 'Julius Sans One', sans-serif;
-      color: darkgrey;
-      border: none;
-      margin-left: 0.5rem;
-      padding: 0.3rem;
-
-    }
-
-    .nav a:hover {
-      text-decoration: none;
-      font-size: 0.8rem;
-      border: none;
-      color: darkgrey;
-
-    }
-
-    }
-
-
-
+}
 
 
 
 .info-container {
-  /*min-width: 25rem;*/
-  margin: 5rem auto;
-  max-height: 50rem;
+  max-width: 75rem;
+  max-height: 65rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(106, 170, 210, 0.5);
+}
+
+.info-container h1 {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.info-container p {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  line-height: 1.5rem;
+  margin: 1rem auto;
+}
+
+.extras-container {
+  max-width: 75rem;
+  margin: 20rem auto;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   color: black;
   padding: 2rem;
   border-radius: 15px;
   background-color: white;
+  opacity: 0.8;
 }
 
-.info-container h1 {
+.extras-container h1 {
   color: black;
 }
 
-.info-container p {
+.extras-container p {
   font-family: 'Lato', sans-serif;
   max-width: 50%;
   text-align: left;
@@ -282,48 +186,30 @@ iframe.tiny,
   margin: 1rem auto;
 }
 
-.info-container img {
-  max-width: 200px;
+.portfolio-text  {
+  text-align: left;
+  background-color: white;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 40rem;
 }
 
-@media only screen and (max-width: 550px) and (min-width: 471px){
-
-  h1 {
-    font-size: 1.2rem;
-    line-height: 2rem;
-  }
-
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
-  }
+.portfolio-text h1,
+.portfolio-text p {
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+  font-size: 0.75rem;
+  width: 100%;
+}
 
 
-@media only screen and (max-width: 470px) {
-
-  h1 {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 0.7rem;
-  }
-
-  .info-container {
-    max-height: 2000px!important;
-    max-width: 370px!important;
-    display: flex;
-    flex-direction: column;
-  }
-
-  }
-
-.button button {
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  margin: 1rem auto;
+button {
+  padding: 0.1rem;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  width: 12rem;
   font-family: 'Julius Sans One', sans-serif;
   background-color: rgba(106, 170, 210, 0.82);
   color: rgb(255, 255, 255);
@@ -332,19 +218,32 @@ iframe.tiny,
   border-style: none;
 }
 
-.button button:hover {
+.portfolio-button button {
+  padding: 0.1rem;
+  font-size: 0.75rem;
+  margin: 0.5rem auto;
+  width: 15rem;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: rgba(106, 170, 210, 0.82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1px solid white;
+  border-style: none;
+}
+
+button:hover {
   background-color: rgb(255, 255, 255);
   color: rgba(106, 170, 210, 0.82);
   border: 1px solid rgba(106, 170, 210, 0.82);
   transition: 0.5s;
 }
 
-.button a {
+a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
-.button a:hover {
+a:hover {
   color: rgba(106, 170, 210, 0.82);
 }
 /*footer*/
@@ -359,15 +258,3 @@ iframe.tiny,
   font-size: 0.7rem;
   font-weight: bold;
 }
-
-@media only screen and (max-width: 470px) {
-
-  .footer p {
-    padding: 1rem 0.1rem;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 0.5rem;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-
-  }
