@@ -80,25 +80,33 @@ ul {
 
 }
 
-.nav a:active {
+.nav a.active {
   text-decoration: none;
   font-size: 1rem;
   background-color: rgb(106, 170, 210);
   color: white;
+  border-radius: 15px;
 }
 
 .banner {
   background-image: url("../images/hero-design-image.png");
   background-size: cover;
   width: 100%;
-  padding: 20rem;
+  padding: 20rem 5rem;
   top: 6rem;
 }
 
+.portfolio-banner {
+    background-image: url("../images/hero-design-image.png");
+    background-size: cover;
+    width: 100%;
+    padding: 3rem;
+    top: 6rem;
+}
 
 .tagline {
-  max-width: 75rem;
-  margin: 22rem auto;
+  max-width: 60rem;
+  margin: auto;
   height: 30%;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -108,6 +116,29 @@ ul {
   background-color: rgba(106, 170, 210, 0.82);
 }
 
+.small-text {
+  line-height: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.home-button button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem auto;
+  width: 10rem;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: white;
+  color: rgba(106, 170, 210, 0.82);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-style: none;
+}
+
+.home-button button:hover {
+  background-color: rgba(106, 170, 210, 0.82);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
 
 
 
@@ -120,8 +151,7 @@ ul {
 }
 
 .jumbotron.slick-slide {
-  margin-bottom: 0;
-  margin-top: 2rem;
+  margin: 0;
 }
 
 .jumbotron {
@@ -160,7 +190,7 @@ ul {
 
 .extras-container {
   max-width: 75rem;
-  margin: 0auto;
+  margin: 0 auto;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   color: black;
@@ -185,7 +215,7 @@ ul {
 .portfolio-text  {
   text-align: left;
   background-color: white;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   padding: 1rem;
   border-radius: 10px;
   max-height: 40rem;
@@ -234,6 +264,8 @@ button:hover {
   transition: 0.5s;
 }
 
+
+
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -264,48 +296,68 @@ a:hover {
 
 
 
-@media only screen and (max-width: 1440px) and (min-width: 1300px){
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1051px){
 
 
 .banner {
-  padding: 11rem 2rem;
+  padding: 18rem 4rem;
 }
 
 
   .extras-container {
-      max-width: 60rem;
+      max-width: 40rem;
       margin: auto;
 
 
 }
 }
 
-@media only screen and (max-width: 1299px) and (min-width: 769px){
+@media only screen and (max-width: 1099px) {
+
+        .jumbotron img {
+        max-height: 20rem;
+        }
+
+}
+
+
+
+@media only screen and (max-width: 1050px) and (min-width: 769px) {
 
   .banner {
-    padding: 11rem 2rem;
+    padding: 15rem 4rem;
   }
 
+  .site-title {
+    width: 400px;
 
-.extras-container {
-      margin: auto;
-      max-width: 40rem;
+  }
+
+  .extras-container {
+        margin: auto;
+
+  }
+
+  .nav a {
+    margin-left: 1rem;
+    margin-right: 0;
+    padding: 0.2rem;
+  }
 
 }
-}
 
-@media only screen and (max-width: 1089px) and (min-width: 769px){
+@media only screen and (max-width: 768px) {
 
+.tagline h1 {
+  font-size: 2.1rem;
+  }
 
-
-
-
-.extras-container {
-      margin: auto;
-
+.tagline h3 {
+  font-size: 1.5rem;
 }
 }
-
 
 @media only screen and (max-width: 768px) and (min-width: 415px) {
 
@@ -314,8 +366,15 @@ a:hover {
   }
 
   .site-title {
-    width: 450px;
+    width: 400px;
+
   }
+
+  .site-title h2 {
+       line-height: 1.8rem;
+       font-size: 1.8rem;
+
+ }
 
   .nav {
     width: 350px;
@@ -327,11 +386,69 @@ a:hover {
     padding: 0.2rem;
   }
 
+
+          .jumbotron img {
+          max-height: 15rem;
+          }
+
+    .portfolio-banner {
+      margin: 0;
+    }
+
+    .info-container {
+      margin: 0;
+    }
+
+    .portfolio-text p {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+  .extras-container p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 1rem 1rem 0 1rem;
+
+  }
+
+  .extras-container h1 {
+    font-size: 1.8rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 543px) {
+
+            .jumbotron img {
+            max-height: 10rem;
+            }
+
+
+
+}
+
+@media only screen and (max-width: 542px) and (min-width: 415px) {
+
+            .jumbotron img {
+            max-height: 9rem;
+            }
+
+            .portfolio-button button {
+              padding: 0.5rem;
+              font-size: 0.75rem;
+              margin: 0.5rem auto;
+              width: 9rem;
+            }
+
 }
 
 
 
-@media only screen and (max-width: 414px) and (min-width: 376px) {
+@media only screen and (max-width: 414px) /*and (min-width: 376px)*/ {
 
   .content {
       max-width: 414px;
@@ -344,6 +461,8 @@ a:hover {
       font-size: 1.8rem;
 
 }
+
+
 
 .nav a {
   border-radius: 1px;
@@ -361,10 +480,6 @@ a:hover {
 
 }
 
-.banner {
-
-  padding: 3rem 0;
-}
 
 .extras-container {
     max-width: 280px;
@@ -394,14 +509,14 @@ a:hover {
 }
 
 
-}
+/*}
 
 @media only screen and (max-width: 375px){
 
   .content {
       max-width: 350px;
 
-}
+}*/
 
 
 
@@ -431,6 +546,38 @@ a:hover {
   background-image: url("../images/hero-design-image.png");
   background-size: cover;
   padding: 1.5rem 0;
+}
+
+
+.jumbotron img {
+max-height: 8rem;
+object-fit: contain;
+overflow: hidden;
+}
+
+.portfolio-banner {
+margin: 0;
+padding: 1rem;
+}
+
+.info-container {
+margin: 0;
+}
+
+.portfolio-text {
+  display: block;
+}
+
+.portfolio-text p {
+font-size: 0.75rem;
+line-height: 1rem;
+}
+
+.portfolio-button button {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  margin: 0.5rem auto;
+  width: 8rem;
 }
 
 .extras-container {
